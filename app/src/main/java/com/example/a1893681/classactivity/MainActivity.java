@@ -31,7 +31,11 @@ public class MainActivity extends AppCompatActivity {
                 Snackbar snackbar = Snackbar.make(findViewById(R.id.imageView),"Registration Done",Snackbar.LENGTH_LONG).setAction("Clear", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        
+                       // Toast.makeText(getApplicationContext(), edt_fname.getText() + "I AM UNABLE TO RESET AL, THE FIELDS....SORRY", Toast.LENGTH_SHORT).show();
+                        edt_fname.setText(" ");
+                        edt_lname.setText(" ");
+                        edt_email.setText(" ");
+                        edt_password.setText(" ");
 
                     }
                 });
