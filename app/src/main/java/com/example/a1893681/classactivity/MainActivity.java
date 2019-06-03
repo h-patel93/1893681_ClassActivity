@@ -1,5 +1,6 @@
 package com.example.a1893681.classactivity;
 
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,10 +26,17 @@ public class MainActivity extends AppCompatActivity {
         btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), edt_fname.getText() + "Thank you", Toast.LENGTH_SHORT).show();
 
+                Snackbar snackbar = Snackbar.make(findViewById(R.id.imageView),"Registration Done",Snackbar.LENGTH_LONG).setAction("Clear", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        
 
-                Toast.makeText(getApplicationContext(), edt_fname.getText(), Toast.LENGTH_SHORT).show();
+                    }
+                });
 
+snackbar.show();
             }
         });
 
