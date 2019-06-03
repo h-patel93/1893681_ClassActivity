@@ -2,8 +2,10 @@ package com.example.a1893681.classactivity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,5 +19,25 @@ public class MainActivity extends AppCompatActivity {
         btn_exit = findViewById(R.id.btn_exit);
         edt_email = findViewById(R.id.edt_email);
         edt_fname = findViewById(R.id.edt_fname);
+        edt_lname = findViewById(R.id.edt_lname);
+        edt_password = findViewById(R.id.edt_password);
+
+        btn_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            
+
+            }
+        });
+
+        btn_exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+            }
+        });
+
     }
 }
