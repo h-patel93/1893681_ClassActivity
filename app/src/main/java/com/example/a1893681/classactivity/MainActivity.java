@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn_submit,btn_exit;
-        EditText edt_email,edt_password,edt_fname,edt_lname;
+        final EditText edt_email,edt_password,edt_fname,edt_lname;
         btn_submit = findViewById(R.id.btn_submit);
         btn_exit = findViewById(R.id.btn_exit);
         edt_email = findViewById(R.id.edt_email);
@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(), "Toast called", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(getApplicationContext(), edt_fname.getText(), Toast.LENGTH_SHORT).show();
 
             }
         });
